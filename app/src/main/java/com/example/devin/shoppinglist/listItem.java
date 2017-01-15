@@ -9,28 +9,27 @@ import java.util.Date;
  * Created by Devin on 1/15/2017.
  */
 
-public class ShoppingList {
+public class listItem {
 
-    private String listName;
+    private String item;
     private String timeCreated;
     private String creator;
-    private ArrayList<listItem> groceries;
+    private boolean bought;
 
-    public ShoppingList(String listName, String creator) {
-        this.listName = listName;
+    public listItem(String name, String creator) {
+        item = name;
         this.creator = creator;
-        groceries = new ArrayList<listItem>();
         Date dateTime = new Date();
         DateFormat df = new SimpleDateFormat("dd/MM/yy HH:mm:ss");
         timeCreated = df.format(dateTime);
     }
-
-    public void addItem(listItem item, ArrayList<listItem> groceries) {
-        groceries.add(item);
+    
+    public String getItem() {
+        return item;
     }
 
-    public void removeItem(listItem item, ArrayList<listItem> groceries) {
-        groceries.remove(item);
+    public void setItem(String item) {
+        this.item = item;
     }
 
     public String getTimeCreated() {
@@ -41,14 +40,6 @@ public class ShoppingList {
         this.timeCreated = timeCreated;
     }
 
-    public String getListName() {
-        return listName;
-    }
-
-    public void setListName(String listName) {
-        this.listName = listName;
-    }
-
     public String getCreator() {
         return creator;
     }
@@ -57,11 +48,11 @@ public class ShoppingList {
         this.creator = creator;
     }
 
-    public ArrayList<listItem> getGroceries() {
-        return groceries;
+    public boolean isBought() {
+        return bought;
     }
 
-    public void setGroceries(ArrayList<listItem> groceries) {
-        this.groceries = groceries;
+    public void setBought(boolean bought) {
+        this.bought = bought;
     }
 }
