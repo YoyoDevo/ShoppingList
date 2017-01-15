@@ -25,8 +25,21 @@
         android:text="Log In"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:id="@+id/logIn"
         android:layout_centerVertical="true"
-        android:layout_centerHorizontal="true"
-        android:id="@+id/logIn" />
+        android:elevation="24dp"
+        android:layout_alignRight="@+id/showLists"
+        android:layout_alignEnd="@+id/showLists"
+        android:layout_alignLeft="@+id/showLists"
+        android:layout_alignStart="@+id/showLists" />
+
+    <Button
+        android:text="View Shopping Lists"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/showLists"
+        android:elevation="24dp"
+        android:layout_below="@+id/logIn"
+        android:layout_centerHorizontal="true" />
 
 </RelativeLayout>
