@@ -22,7 +22,11 @@
         </activity>
         <activity
             android:name=".LoginPage"
-            android:label="@string/title_activity_login_page"></activity>
+            android:label="@string/title_activity_login_page" />
+        <activity
+            android:name=".ShowLists"
+            android:label="@string/title_activity_show_lists"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
     </application>
 
 </manifest>
