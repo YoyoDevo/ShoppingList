@@ -7,32 +7,10 @@
     android:fitsSystemWindows="true"
     tools:context="com.example.devin.shoppinglist.ShowLists">
 
-    <android.support.design.widget.AppBarLayout
-        android:id="@+id/app_bar"
+    <Spinner
         android:layout_width="match_parent"
-        android:layout_height="90dp"
-        android:fitsSystemWindows="true"
-        android:theme="@style/AppTheme.AppBarOverlay">
-
-        <android.support.design.widget.CollapsingToolbarLayout
-            android:id="@+id/toolbar_layout"
-            android:layout_width="match_parent"
-            android:layout_height="99dp"
-            android:fitsSystemWindows="true"
-            app:contentScrim="?attr/colorPrimary"
-            app:layout_scrollFlags="scroll|exitUntilCollapsed">
-
-            <android.support.v7.widget.Toolbar
-                android:id="@+id/toolbar"
-                android:layout_width="match_parent"
-                android:layout_height="52dp"
-                app:layout_collapseMode="pin"
-                app:popupTheme="@style/AppTheme.PopupOverlay" />
-
-        </android.support.design.widget.CollapsingToolbarLayout>
-    </android.support.design.widget.AppBarLayout>
-
-    <include layout="@layout/content_show_lists"
-        android:layout_height="wrap_content" />
-
+        android:layout_height="48dp"
+        android:id="@+id/spinner2"
+        android:spinnerMode="dialog"
+        android:title="lists"/>
 </android.support.design.widget.CoordinatorLayout>
