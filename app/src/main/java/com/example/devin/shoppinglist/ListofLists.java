@@ -1,6 +1,7 @@
 package com.example.devin.shoppinglist;
 
 import java.util.ArrayList;
+import java.util.List;
 
 /**
  * Created by Devin on 1/15/2017.
@@ -14,7 +15,7 @@ public class ListofLists {
     private ArrayList<ShoppingList> lists;
 
     public ListofLists(String listName, String creator) {
-        ShoppingList list = new ShoppingList(listName, creator);
+        lists = new ArrayList<ShoppingList>();;
     }
 
     public void addList(ShoppingList list) {
@@ -55,5 +56,22 @@ public class ListofLists {
 
     public void setLists(ArrayList<ShoppingList> lists) {
         this.lists = lists;
+    }
+
+    public int getSize() {
+        return lists.size();
+    }
+
+    public String getShoppingListAtIndex(int index) {
+        String result = lists.get(index).getListName();
+        return result;
+    }
+
+    public ArrayList<String> toArrayList() {
+        ArrayList<String> result = new ArrayList<String>();
+        for (int i = 0; i < lists.size(); i++) {
+            result.add(getShoppingListAtIndex(i));
+        }
+        return result;
     }
 }
