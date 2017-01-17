@@ -2,8 +2,9 @@ package com.example.devin.shoppinglist;
 
 import java.util.ArrayList;
 import java.util.List;
-
+import com.example.devin.shoppinglist.ShoppingList;
 /**
+ * file: ListofLists.java
  * Created by Devin on 1/15/2017.
  */
 

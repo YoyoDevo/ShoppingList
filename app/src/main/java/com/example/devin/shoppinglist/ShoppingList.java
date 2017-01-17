@@ -6,6 +6,7 @@ import java.util.ArrayList;
 import java.util.Date;
 
 /**
+ * file: ShoppingList.java
  * Created by Devin on 1/15/2017.
  */
 
